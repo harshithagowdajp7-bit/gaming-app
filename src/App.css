@@ -1,0 +1,74 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #0b1224 0%, #141b35 100%);
+  color: #edf2ff;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.topbar {
+  padding: 24px 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.topbar h1 {
+  margin: 8px 0 0;
+  font-size: clamp(2rem, 2.6vw, 3rem);
+}
+
+.tagline {
+  color: #7ea8ff;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  padding: 28px;
+}
+
+.sidebar {
+  background: rgba(11, 17, 36, 0.92);
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar h2 {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+}
+
+.game-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.play-area {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.placeholder-card {
+  text-align: center;
+}
+
+.placeholder-card h2 {
+  margin: 0 0 12px;
+}
+
+@media (max-width: 860px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
